@@ -1,0 +1,138 @@
+:root {
+    --main-olive: #a9ad48;
+    --main-purple: #524360;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: #ccc3d5;
+}
+
+.buttons {
+    margin: 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--main-olive);
+    border: 2px solid var(--main-purple);
+}
+
+.all-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+}
+
+.generation {
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #524360;
+}
+
+.grid-size {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #524360;
+}
+
+.slider {
+    -webkit-appearance: none;
+    background: var(--main-olive);
+    outline: none;
+    border-radius: 5px;
+    height: 11px;
+    margin: auto;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--main-purple);
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.square {
+    position: "relative";
+    animation-duration: 2s;
+    animation-name: example;
+    color: white;
+    width: 100%;
+}
+
+@keyframes example {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.about-title {
+    font-family: "Poppins";
+    font-size: 50px;
+    color: #524360;
+    text-align: center;
+}
+
+.about-description {
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-about {
+    width: 30%;
+    height: 140px;
+    font-size: 35px;
+    padding: 5px;
+    margin: 5px;
+    color: #524360;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.about-button {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-text {
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+.about-text2 {
+    font-family: "Poppins";
+    font-size: 12px;
+}

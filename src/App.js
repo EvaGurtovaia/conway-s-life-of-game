@@ -1,18 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Board from "./components/Board";
+import About from "./components/About";
+import "./styling.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p> Conway's game of life!</p>
-      </header>
-      <main>
-        <stimulation/>
-      </main>
-    </div>
-  );
+    return (
+        <div className="main">
+            <div
+                style={{
+                    height: "350px",
+                }}
+            >
+                <About />
+            </div>
+            <div
+                style={{
+                    width: "75%",
+                    margin: "auto",
+                }}
+            >
+                <Board />
+            </div>
+        </div>
+    );
 }
 
 export default App;
